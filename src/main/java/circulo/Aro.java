@@ -2,9 +2,11 @@ package circulo;
 
 /**
  * Probas de refactorización en NetBeans coa clase Aro
+ *
  * @author Daniel Sebio
  */
 public class Aro {
+
     public static final double MINIMO = 0.0;
     public static final double LIMITERADIO = 0.0;
 
@@ -22,7 +24,7 @@ public class Aro {
     }
 
     public void establecerX(int valorX) {
-        coordenadaX=valorX;
+        coordenadaX = valorX;
     }
 
     public int obterX() {
@@ -30,7 +32,7 @@ public class Aro {
     }
 
     public void establecerY(int valorY) {
-        coordenadaY=valorY;
+        coordenadaY = valorY;
     }
 
     public int obterY() {
@@ -39,7 +41,7 @@ public class Aro {
 
     public void establecerRadio(double valorRadio) {
 
-        radio=(valorRadio < MINIMO ? MINIMO : valorRadio);
+        radio = (valorRadio < MINIMO ? MINIMO : valorRadio);
     }
 
     public double obterRadio() {
@@ -63,8 +65,33 @@ public class Aro {
         return "Centro = [" + coordenadaX + "," + coordenadaY + "]; Radio = " + radio;
     }
 
-    public void trasladarCentro(int trasladarX, int trasladarY){
-        coordenadaX=coordenadaX + trasladarX;
-        coordenadaY=coordenadaY + trasladarY;
+    public void trasladarCentro(int trasladarX, int trasladarY) {
+        coordenadaX = coordenadaX + trasladarX;
+        coordenadaY = coordenadaY + trasladarY;
     }
+
+    public int getCoordenadaX() {
+        return coordenadaX;
+    }
+
+    public int getCoordenadaY() {
+        return coordenadaY;
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setCoordenadaX(int coordenadaX) {
+        this.coordenadaX = coordenadaX;
+    }
+
+    public void setCoordenadaY(int coordenadaY) {
+        this.coordenadaY = coordenadaY;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
+
 }

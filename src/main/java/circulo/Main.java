@@ -6,7 +6,12 @@ import java.text.DecimalFormat;
  * Pruebas de refactorización en NetBeans con la clase Aro
  * @author Daniel Sebio
  */
-public class Main {
+
+public class Main { 
+    /**
+     * Main
+     * @param args argumentos
+     */
     public static void main(String[] args) {
         Aro circulo = new Aro(37,43,2.5);
         String saida =

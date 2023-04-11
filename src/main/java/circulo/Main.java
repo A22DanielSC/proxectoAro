@@ -9,12 +9,6 @@ import java.text.DecimalFormat;
  */
 public class Main {
 
-    /**
-     * Constructor vacío Main
-     *
-     */
-    public Main() {
-    }
 
     /**
      * Método Main donde se estructura el funcionamiento principal del programa

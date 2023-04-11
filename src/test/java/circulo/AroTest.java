@@ -22,6 +22,22 @@ public class AroTest {
      */
     public AroTest() {
     }
+
+    @org.junit.BeforeClass
+    public static void setUpClass() throws Exception {
+    }
+
+    @org.junit.AfterClass
+    public static void tearDownClass() throws Exception {
+    }
+
+    @org.junit.Before
+    public void setUp() throws Exception {
+    }
+
+    @org.junit.After
+    public void tearDown() throws Exception {
+    }
     
     /**
      * Test of establecerX method, of class Aro.
@@ -149,6 +165,101 @@ public class AroTest {
         int resultny = instance.getCoordenadaY();
         assertEquals(resultx+5, resultnx);
         assertEquals(resulty+6, resultny);
+    }
+
+    /**
+     * Test of toString method, of class Aro.
+     */
+    @org.junit.Test
+    public void testToString() {
+        System.out.println("toString");
+        Aro instance = new Aro();
+        String expResult = "";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getCoordenadaX method, of class Aro.
+     */
+    @org.junit.Test
+    public void testGetCoordenadaX() {
+        System.out.println("getCoordenadaX");
+        Aro instance = new Aro();
+        int expResult = 0;
+        int result = instance.getCoordenadaX();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getCoordenadaY method, of class Aro.
+     */
+    @org.junit.Test
+    public void testGetCoordenadaY() {
+        System.out.println("getCoordenadaY");
+        Aro instance = new Aro();
+        int expResult = 0;
+        int result = instance.getCoordenadaY();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getRadio method, of class Aro.
+     */
+    @org.junit.Test
+    public void testGetRadio() {
+        System.out.println("getRadio");
+        Aro instance = new Aro();
+        double expResult = 0.0;
+        double result = instance.getRadio();
+        assertEquals(expResult, result, 0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setCoordenadaX method, of class Aro.
+     */
+    @org.junit.Test
+    public void testSetCoordenadaX() {
+        System.out.println("setCoordenadaX");
+        int coordenadaX = 0;
+        Aro instance = new Aro();
+        instance.setCoordenadaX(coordenadaX);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setCoordenadaY method, of class Aro.
+     */
+    @org.junit.Test
+    public void testSetCoordenadaY() {
+        System.out.println("setCoordenadaY");
+        int coordenadaY = 0;
+        Aro instance = new Aro();
+        instance.setCoordenadaY(coordenadaY);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setRadio method, of class Aro.
+     */
+    @org.junit.Test
+    public void testSetRadio() {
+        System.out.println("setRadio");
+        double radio = 0.0;
+        Aro instance = new Aro();
+        instance.setRadio(radio);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }
